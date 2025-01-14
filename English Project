@@ -1,0 +1,228 @@
+def start_game():
+    print("welcome!! .")
+    print("You find yourself at a crossroad. You can go left towards the 'woods' or right towards the 'river'.")
+    choice = input("Enter 'left' or 'right': ")
+    if choice == 'left':
+        left_path()
+    elif choice == 'right':
+        right_path()
+    else:
+        print("Invalid choice. Please try again.")
+        start_game()
+
+
+def left_path():
+    print("You chose the woods. In literature, many characters follow paths already laid out for them.")
+    print("You come across a a book on the floor. Do you 'read' the book or 'ignore' it?")
+    choice = input("Enter 'read' or 'ignore': ")
+    if choice == 'read':
+        print("As you read, you realize that the story seem to follow a predictable pattern.")
+        print("Just like in real life, many people follow the paths set by the society. Do you 'accept' this or 'rebel'?")
+        sub_choice = input("Enter 'accept' or 'rebel': ")
+        if sub_choice == 'accept':
+            print("You accept the predetermined paths, and your life seems to follow a prewritten script.")
+            print("Maybe the something you read has influenced your decision, making you believe you had no other option.")
+            print("Now, you encounter a wizard who tells you to 'follow' a set path or 'explore' alternatives.")
+            sub_choice2 = input("Enter 'follow' or 'explore': ")
+            if sub_choice2 == 'follow':
+                print("You follow the wizards advice, and your life becomes even more predictable.")
+                print("The wizard guides you through various rituals and customs. Do you 'adhere' strictly or 'modify' them?")
+                sub_choice3 = input("Enter 'adhere' or 'modify': ")
+                if sub_choice3 == 'adhere':
+                    print("You adhere strictly to the rituals, but you start to feel like a puppet.")
+                    print("You wonder if you're simply playing a role in a grander story. Game Over.")
+                elif sub_choice3 == 'modify':
+                    print("You try to modify the rituals, but society shuns you. You feel isolated. Game Over.")
+                else:
+                    print("Invalid choice. Please try again.")
+                    left_path()
+            elif sub_choice2 == 'explore':
+                print("You try to explore alternatives, but you find that every path seems to lead back to the same place. Game Over")
+            
+            else:
+                print("Invalid choice. Please try again.")
+                left_path()
+        elif sub_choice == 'rebel':
+            print("You try to rebel, but the forces of tradition seem too strong. You find it difficult to break free.")
+            print("You decide to seek 'help' or 'persevere' on your own.")
+            sub_choice2 = input("Enter 'help' or 'persevere': ")
+            if sub_choice2 == 'help':
+                print("You seek help, but the help you get only guides you back to the woods.")
+                print("The helper suggests you 'compromise' or 'insist' on your own way.")
+                sub_choice3 = input("Enter 'compromise' or 'insist': ")
+                if sub_choice3 == 'compromise':
+                    print("You compromise, but you feel like you've lost your identity. Game Over.")
+                elif sub_choice3 == 'insist':
+                    print("You insist on your own way, but face severe backlash. Game Over.")
+                else:
+                    print("Invalid choice. Please try again.")
+                    left_path()
+            elif sub_choice2 == 'persevere':
+                print("You persevere, but the weight of tradition is heavy. You feel like you're fighting an uphill battle.")
+                print("You come across a 'secret society' that offers you 'membership' or 'rejection'.")
+                sub_choice3 = input("Enter 'membership' or 'rejection': ")
+                if sub_choice3 == 'membership':
+                    print("You join the secret society, but they have their own rigid rules. You feel trapped. Game Over.")
+                elif sub_choice3 == 'rejection':
+                    print("You reject their offer, but you're left alone. You struggle to make progress. Game Over.")
+                else:
+                    print("Invalid choice. Please try again.")
+                    left_path()
+            else:
+                print("Invalid choice. Please try again.")
+                left_path()
+        else:
+            print("Invalid choice. Please try again.")
+            left_path()
+    elif choice == 'ignore':
+        print("You ignore the classic books, but you feel a sense of loss.")
+        print("It seems that by ignoring the past, you've lost a part of yourself.")
+        print("You see a 'stranger' who offers you a different perspective. Do you 'listen' or 'walk away'?")
+        sub_choice = input("Enter 'listen' or 'walk away': ")
+        if sub_choice == 'listen':
+            print("The stranger tells you about hidden knowledge. Do you 'embrace' it or 'doubt' it?")
+            sub_choice2 = input("Enter 'embrace' or 'doubt': ")
+            if sub_choice2 == 'embrace':
+                print("You embrace the knowledge, but it leads you to a dead end.")
+                print("The knowledge seems to be incomplete. Do you 'search' for more or 'give up'?")
+                sub_choice3 = input("Enter 'search' or 'give up': ")
+                if sub_choice3 == 'search':
+                    print("You search for more, but you only find more confusion. Game Over.")
+                elif sub_choice3 == 'give up':
+                    print("You give up, feeling defeated. Game Over.")
+                else:
+                    print("Invalid choice. Please try again.")
+                    left_path()
+            elif sub_choice2 == 'doubt':
+                print("You doubt the stranger and continue on your own, but you feel lost.")
+                print("You find a 'guide' who offers to 'lead' you or 'leave' you be.")
+                sub_choice3 = input("Enter 'lead' or 'leave': ")
+                if sub_choice3 == 'lead':
+                    print("You let the guide lead you, but they lead you back to the traditional path. Game Over.")
+                elif sub_choice3 == 'leave':
+                    print("You ask the guide to leave, but you're back to being lost. Game Over.")
+                else:
+                    print("Invalid choice. Please try again.")
+                    left_path()
+            else:
+                print("Invalid choice. Please try again.")
+                left_path()
+        elif choice == 'walk away':  # Corrected indentation
+            print("You walk away, but you keep feeling like you missed an opportunity.")
+            print("You see a 'sign' that points to a 'familiar' path or an 'unknown' path.")
+            sub_choice = input("Enter 'familiar' or 'unknown': ")
+            if sub_choice == 'familiar':
+                print("You take the familiar path, but it leads you back to where you started. Game Over.")
+            elif sub_choice == 'unknown':
+                print("You take the unknown path, but it's full of obstacles. You struggle. Game Over.")
+            else:
+                print("Invalid choice. Please try again.")
+                left_path()
+        else:
+            print("Invalid choice. Please try again.")
+            left_path()
+    else:
+        print("Invalid choice. Please try again.")
+        left_path()
+
+
+def right_path():
+    print("You chose the river. You are breaking away from the woods.")
+    print("You come across a group of artists. Do you 'join' them or 'avoid' them?")
+    choice = input("Enter 'join' or 'avoid': ")
+    if choice == 'join':
+        print("You join the artists and start creating something new. But are you really free?")
+        print("Maybe your decision was influenced by the idea of innovation itself. Do you 'question' your choice or 'continue'?")
+        sub_choice = input("Enter 'question' or 'continue': ")
+        if sub_choice == 'question':
+            print("You question your choices and realize that even innovation can be a form of following a trend.")
+            print("You decide to 'change' your approach or 'stay' the course.")
+            sub_choice2 = input("Enter 'change' or 'stay': ")
+            if sub_choice2 == 'change':
+                print("You change your approach, but you find that every new idea has been done before.")
+                print("You meet a 'visionary' who suggests 'redefining' or 'combining' ideas.")
+                sub_choice3 = input("Enter 'redefining' or 'combining': ")
+                if sub_choice3 == 'redefining':
+                    print("You try to redefine your ideas, but you face criticism. Do you 'listen' or 'ignore'?")
+                    sub_choice4 = input("Enter 'listen' or 'ignore': ")
+                    if sub_choice4 == 'listen':
+                        print("You listen, but you lose your original vision. Game Over.")
+                    elif sub_choice4 == 'ignore':
+                        print("You ignore the criticism, but you struggle to gain acceptance. Game Over.")
+                    else:
+                        print("Invalid choice. Please try again.")
+                        right_path()
+                elif sub_choice3 == 'combining':
+                    print("You combine ideas, but it becomes a mess. You feel lost in creativity. Game Over.")
+                else:
+                    print("Invalid choice. Please try again.")
+                    right_path()
+            elif sub_choice2 == 'stay':
+                print("You stay the course, but you start to see patterns even in your innovative work.")
+                print("You meet a critic who tells you to 'adapt' or 'ignore' feedback.")
+                sub_choice3 = input("Enter 'adapt' or 'ignore': ")
+                if sub_choice3 == 'adapt':
+                    print("You adapt, but you lose your unique voice.")
+                    print("You try to 'reinvent' yourself or 'merge' with others.")
+                    sub_choice4 = input("Enter 'reinvent' or 'merge': ")
+                    if sub_choice4 == 'reinvent':
+                        print("You try to reinvent yourself, but you lose your identity. Game Over.")
+                    elif sub_choice4 == 'merge':
+                        print("You merge with others, but your ideas get diluted. Game Over.")
+                    else:
+                        print("Invalid choice. Please try again.")
+                        right_path()
+                elif sub_choice3 == 'ignore':
+                    print("You ignore the feedback and keep going, but you find it hard to make progress.")
+                    print("You decide to 'push' harder or 'pause' your work.")
+                    sub_choice4 = input("Enter 'push' or 'pause': ")
+                    if sub_choice4 == 'push':
+                        print("You push harder, but you burn out. Game Over.")
+                    elif sub_choice4 == 'pause':
+                        print("You pause, and you lose momentum. Game Over.")
+                    else:
+                        print("Invalid choice. Please try again.")
+                        right_path()
+                else:
+                    print("Invalid choice. Please try again.")
+                    right_path()
+            else:
+                print("Invalid choice. Please try again.")
+                right_path()
+        elif choice == 'avoid':
+            print("You avoid the artists, thinking you can make your own path alone.")
+            print("But you soon find yourself lost, as if you were meant to be part of something bigger.")
+            print("You come across a 'sign' that points to a 'shortcut' or a 'long way'.")
+            sub_choice = input("Enter 'shortcut' or 'long way': ")
+            if sub_choice == 'shortcut':
+                print("You take the shortcut, but it leads to a dead end.")
+                print("You see a 'portal' that might take you to a 'new world' or 'back'.")
+                sub_choice2 = input("Enter 'new world' or 'back': ")
+                if sub_choice2 == 'new world':
+                    print("You enter the portal, but the new world is chaotic. You can't find your place. Game Over.")
+                elif sub_choice2 == 'back':
+                    print("You go back, but you're still lost. Game Over.")
+                else:
+                    print("Invalid choice. Please try again.")
+                    right_path()
+            elif sub_choice == 'long way':
+                print("You take the long way, but you run out of resources.")
+                print("You find a 'supplier' who offers 'help' or 'tricks'.")
+                sub_choice2 = input("Enter 'help' or 'tricks': ")
+                if sub_choice2 == 'help':
+                    print("You take the help, but it comes with strings attached. Game Over.")
+                elif sub_choice2 == 'tricks':
+                    print("You fall for the tricks and get further lost. Game Over.")
+                else:
+                    print("Invalid choice. Please try again.")
+                    right_path()
+            else:
+                print("Invalid code. Please try again.")
+                right_path()
+        else:
+            print("Invalid choice. Please try again.")
+            right_path()
+
+
+if __name__ == "__main__":
+    start_game()
